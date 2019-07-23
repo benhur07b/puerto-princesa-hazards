@@ -28,8 +28,6 @@ $(document).ready(function() {
         }
     });
 
-    barangays
-
     var basemaps = {
         "OSM Mapnik": osm_mapnik,
     }
@@ -47,5 +45,7 @@ $(document).ready(function() {
     });
 
     L.control.layers(basemaps, overlays).addTo(map);
+
+    map.invalidateSize();
 
 })

@@ -80,6 +80,8 @@ $(document).ready(function(){
 
     });
 
+    map.resize();
+
     var toggleableLayerIds = [ 'Barangays', 'Tsunami', 'Building Footprints' ];
 
     for (var i = 0; i < toggleableLayerIds.length; i++) {
